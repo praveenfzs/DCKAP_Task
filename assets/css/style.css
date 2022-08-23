@@ -25,7 +25,7 @@
     .hamburger { display: none;}
     .menu_outer_wrap ul li a:hover { color: #10c9c3; }
     nav.header_section_outer_wrap { position: sticky; top: 0; background: #fff; z-index: 999; box-shadow: 0px 0px 6px 1px rgb(0 0 0 / 22%); }
-    a.side_logo.logo_outer_wrap { display: none; }
+    a.side_logo.logo_outer_wrap { display: none !important; }
 
 /* Page title */
     .page_title_outer_wrap { position: relative; overflow: hidden; }
@@ -98,17 +98,14 @@
     .footer_col_wrap.footer_col_1 { flex: 0 0 33%; }
     .footer_col_wrap.footer_col_3 { flex: 0 0 28%; }
     nav.header_section_outer_wrap .box_wrap { height: 85px; }
-
-
 }
 
 @media(max-width:991px){
     .menu_outer_wrap { position: fixed; background: #fff; width: 300px; left: -100%; top: 0; height: 100vh; z-index: 999; padding-top: 30px; -webkit-transition: all 0.6s ease-in-out; -moz-transition: all 0.6s ease-in-out; -ms-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out;}
-    /* .menu_outer_wrap { display: none;} */
     .menu_outer_wrap ul li a { font-size: 16px; }
     .menu_outer_wrap ul li { margin-bottom: 17px; }
     .menu_outer_wrap ul { flex-direction: column; justify-content: flex-start; align-items: flex-start; }
-    a.side_logo.logo_outer_wrap { display: block; }
+    a.side_logo.logo_outer_wrap { display: block !important; }
     .hamburger { display: block; }
     .menu_outer_wrap.active { left: 0; -webkit-transition: all 0.6s ease-in-out; -moz-transition: all 0.6s ease-in-out; -ms-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out;}
     .about_service_row_wrap { flex-wrap: wrap; max-width: 600px; margin: 0 auto; }
@@ -121,7 +118,6 @@
     .about_right_wrap { flex: 0 0 56%; }
     .about_img_outer_wrap { width: 40%; height: 400px; }
     .about_us_section_outer_wrap .box_wrap { height: 400px; }
-
 }
 
 @media(max-width:767px){
@@ -130,8 +126,6 @@
     .about_img_outer_wrap { width: 100%; height: 100%; margin-bottom: 20px;    position: relative; }
     .about_service_inner_wrap { flex-direction: column; justify-content: center; text-align: center; }
     .about_service_icon_wrap { margin: 0 auto 13px; }
-
-
 }
 
 @media(max-width:480px){
@@ -153,5 +147,4 @@
     .need_project_content_wrap p { font-size: 15px; }
     .menu_outer_wrap { width: 250px;}    
     #hamburger.is-active .line:nth-child(1) { -webkit-transform: translateY(9px); -ms-transform: translateY(9px); -o-transform: translateY(9px); transform: translateY(9px); }
-
 }
